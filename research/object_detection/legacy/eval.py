@@ -46,6 +46,9 @@ import functools
 import os
 import tensorflow as tf
 
+import sys
+sys.path.append('/home/lino/PycharmProjects/models/research/')
+
 from object_detection.builders import dataset_builder
 from object_detection.builders import graph_rewriter_builder
 from object_detection.builders import model_builder

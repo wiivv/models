@@ -19,6 +19,9 @@ from absl.testing import parameterized
 
 import tensorflow as tf
 
+import sys
+sys.path.append('/home/lino/PycharmProjects/models/research/')
+
 from google.protobuf import text_format
 from object_detection.builders import model_builder
 from object_detection.meta_architectures import faster_rcnn_meta_arch

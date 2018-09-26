@@ -22,6 +22,9 @@ from absl import flags
 
 import tensorflow as tf
 
+import sys
+sys.path.append('/home/lino/PycharmProjects/models/research/')
+
 from object_detection import model_hparams
 from object_detection import model_lib
 
