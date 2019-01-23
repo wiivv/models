@@ -608,6 +608,7 @@ def visualize_boxes_and_labels_on_image_array(
     max_boxes_to_draw = boxes.shape[0]
   for i in range(min(max_boxes_to_draw, boxes.shape[0])):
     if scores is None or scores[i] > min_score_thresh:
+      print('Score: % s > Class: %s' % (scores[i], category_index[classes[i]]['name']))
       box = tuple(boxes[i].tolist())
       if instance_masks is not None:
         box_to_instance_masks_map[box] = instance_masks[i]
